@@ -59,7 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderers\Assembly.cs" />
     <Compile Include="Renderers\FontWeightExtensions.cs" />
+    <Compile Include="Renderers\ButtonFontWeightEffect.cs" />
     <Compile Include="Renderers\LabelFontWeightEffect.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -63,9 +63,13 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\FontListApp.Android\Renderers\Assembly.cs">
+      <Link>Renderers\Assembly.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\FontWeightExtensions.cs" />
+    <Compile Include="Renderers\ButtonFontWeightEffect.cs" />
     <Compile Include="Renderers\LabelFontWeightEffect.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />

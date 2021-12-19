@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using Xamarin.Forms;
 
 namespace FontListApp.Views
@@ -19,14 +16,28 @@ namespace FontListApp.Views
             var fontWeight = (FontWeight)newValue;
             if (fontWeight != FontWeight.Regular)
             {
-                view.Effects.Add(new LabelFontWeightEffect());
+                if(view is Label)
+                    view.Effects.Add(new LabelFontWeightEffect());
+                else if(view is Button)
+                    view.Effects.Add(new ButtonFontWeightEffect());
             }
             else
             {
-                var toRemove = view.Effects.FirstOrDefault(e => e is LabelFontWeightEffect);
-                if (toRemove != null)
+                if (view is Label)
                 {
-                    view.Effects.Remove(toRemove);
+                    var toRemove = view.Effects.FirstOrDefault(e => e is LabelFontWeightEffect);
+                    if (toRemove != null)
+                    {
+                        view.Effects.Remove(toRemove);
+                    }
+                }
+                else if (view is Button)
+                {
+                    var toRemove = view.Effects.FirstOrDefault(e => e is ButtonFontWeightEffect);
+                    if (toRemove != null)
+                    {
+                        view.Effects.Remove(toRemove);
+                    }
                 }
             }
         }

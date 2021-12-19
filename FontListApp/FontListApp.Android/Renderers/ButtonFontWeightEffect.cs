@@ -1,14 +1,15 @@
-﻿using Android.Widget;
-using FontListApp.Droid.Renderers;
+﻿using FontListApp.Droid.Renderers;
 using FontListApp.Views;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using AndroidButton = Android.Widget.Button;
+using XamarinButton = Xamarin.Forms.Button;
 
-[assembly: ExportEffect(typeof(LabelFontWeightEffect), nameof(LabelFontWeightEffect))]
+[assembly: ExportEffect(typeof(ButtonFontWeightEffect), nameof(ButtonFontWeightEffect))]
 namespace FontListApp.Droid.Renderers
 {
-    public class LabelFontWeightEffect : PlatformEffect
+    public class ButtonFontWeightEffect : PlatformEffect
     {
         protected override void OnAttached() => SetFontWeight();
 
@@ -22,11 +23,11 @@ namespace FontListApp.Droid.Renderers
 
         private void SetFontWeight()
         {
-            if (Control is TextView textView && Element is Label label)
+            if (Control is AndroidButton nativeBtn && Element is XamarinButton btn)
             {
-                int weight = FontWeightEffect.GetFontWeight(label).ToNative();
+                int weight = FontWeightEffect.GetFontWeight(btn).ToNative();
 
-                textView.SetWeight(weight);
+                nativeBtn.SetWeight(weight);
             }
         }
     }

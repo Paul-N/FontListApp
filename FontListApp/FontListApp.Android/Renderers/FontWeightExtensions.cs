@@ -1,4 +1,6 @@
-﻿using Android.Graphics.Fonts;
+﻿using Android.Graphics;
+using Android.Graphics.Fonts;
+using Android.Widget;
 using FontListApp.Views;
 
 namespace FontListApp.Droid.Renderers
@@ -20,6 +22,12 @@ namespace FontListApp.Droid.Renderers
                 FontWeight.Black => FontStyle.FontWeightBlack,
                 _ => FontStyle.FontWeightNormal,
             };
+        }
+
+        internal static void SetWeight(this TextView tv, int fontWeight)
+        {
+            var typeface = tv.Typeface;
+            tv.Typeface = Typeface.Create(typeface, fontWeight, typeface.IsItalic);
         }
     }
 }

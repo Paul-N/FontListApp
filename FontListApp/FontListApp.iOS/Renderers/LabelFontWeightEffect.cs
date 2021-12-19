@@ -1,12 +1,9 @@
-﻿using FontListApp;
-using FontListApp.iOS.Renderers;
+﻿using FontListApp.iOS.Renderers;
 using FontListApp.Views;
-using System;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ResolutionGroupName(Consts.CompanyName)]
 [assembly: ExportEffect(typeof(LabelFontWeightEffect), nameof(LabelFontWeightEffect))]
 namespace FontListApp.iOS.Renderers
 {

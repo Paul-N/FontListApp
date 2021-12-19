@@ -4,17 +4,29 @@
              xmlns:views="clr-namespace:FontListApp.Views"
              x:Class="FontListApp.MainPage">
 
-    <StackLayout Padding="0,30,0,0">
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="UltraLight" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Thin" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Light" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Regular" />
-        <Label Text="Quick brown fox blah blah.. regular.." FontSize="16" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Medium" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Semibold" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Bold" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Heavy" />
-        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Black" />
-    </StackLayout>
+    <ScrollView Orientation="Vertical">
+        <StackLayout Padding="0,30,0,0">
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="UltraLight" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Thin" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Light" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Regular" />
+            <Label Text="Quick brown fox blah blah.. regular.." FontSize="16" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Medium" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Semibold" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Bold" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Heavy" />
+            <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Black" />
 
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="UltraLight" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Thin" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Light" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Regular" />
+            <Button Text="Quick brown fox blah blah.. regular.." FontSize="16" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Medium" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Semibold" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Bold" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Heavy" />
+            <Button Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Black" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
