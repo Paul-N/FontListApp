@@ -5,16 +5,16 @@
              x:Class="FontListApp.MainPage">
 
     <StackLayout Padding="0,30,0,0">
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="UltraLight" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Thin" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Light" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Regular" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="UltraLight" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Thin" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Light" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Regular" />
         <Label Text="Quick brown fox blah blah.. regular.." FontSize="16" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Medium" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Semibold" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Bold" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Heavy" />
-        <views:FontWeightAwareLabel Text="Quick brown fox blah blah.." FontSize="16" FontWeight="Black" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Medium" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Semibold" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Bold" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Heavy" />
+        <Label Text="Quick brown fox blah blah.." FontSize="16" views:FontWeightEffect.FontWeight="Black" />
     </StackLayout>
 
 </ContentPage>
